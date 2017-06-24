@@ -1,0 +1,134 @@
+.img-hover img {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+}
+.img-hover img:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+    -moz-transform:scale(1.20); /* Firefox */
+    -ms-transform:scale(1.20); /* IE 9 */
+    -o-transform:translatZ(0) scale(1.20); /* Opera */
+    transform:translatZ(0) scale(1.20);
+}
+
+
+.grayscale {
+  -webkit-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  -moz-filter: brightness(1.10) grayscale(100%) contrast(90%);
+  filter: brightness(1.10) grayscale(100%);
+}
+
+.img-circle{
+  border: 1px solid gray;
+}
+.caption {
+        margin-left: 13px;
+        bottom: -1.3rem;
+        position: absolute;
+    }
+fieldset{
+  display: none;
+}
+
+.form {
+    border-radius: 7px;
+    padding: 6px;
+}
+.txt[type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.txt_3[type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.txt:focus ,.txt_3:focus{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    transition: all 0.5s ease 0s;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+ 
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+.dashboard_labels{
+  font-size: 15px;
+}
+
+.template_labels{
+  font-size: 12px;
+}
+#__floating_div {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 8%;
+    margin-left: -100px;
+    margin-top: -25px;
+    z-index: 99999;
+}
+@media only screen and (max-device-width :800px) {
+    #__floating_div {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 8%;
+    margin-left: 10%;
+    z-index: 99999;
+}
